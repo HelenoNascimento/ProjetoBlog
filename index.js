@@ -2,11 +2,17 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const connection = require ("./database/database");
-
+const session = require("express-session");
 const categoriesController = require("./categories/CategoriesController");
 const articlesController = require("./articles/ArticlesController");
 const usersCotnrollers = require("./user/UsersController");
 const User = require("./user/User");
+
+
+//sessions
+app.use(session({
+    secret: "entaoeleeh", cookie: {maxAge: 300000}
+}));
 
 // carregando viewe engine ejs
 app.set('view engine', 'ejs');
@@ -34,6 +40,8 @@ connection
  app.use("/",articlesController);
  app.use("/",usersCotnrollers)
 
+
+ 
 
  // lista todos os artigos na tela inicial
 app.get("/",(req, res)=>{

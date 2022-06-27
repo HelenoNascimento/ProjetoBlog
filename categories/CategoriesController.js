@@ -2,13 +2,14 @@ const express = require("express");
 const router = express.Router();
 const Category = require("./category");
 const slugify = require("slugify");
+const admninAuth = require("../middlewares/adminAuth");
 
 router.get("/admin/categories/new", (req,res)=>{
    res.render("admin/categories/new");
 });
 
 // salva uma nova categoria
-router.post("/categories/save",(req,res)=>{
+router.post("/categories/save",admninAuth,(req,res)=>{
     var title = req.body.title; // recebendo os dados do formulario
     if(title != undefined){
 
@@ -25,7 +26,7 @@ router.post("/categories/save",(req,res)=>{
 });
 
 //deleta categoria
-router.post("/categories/delete",(req, res)=>{
+router.post("/categories/delete",admninAuth,(req, res)=>{
     var id= req.body.id;
     if(id != undefined){
         if(!isNaN(id)){
@@ -44,7 +45,7 @@ router.post("/categories/delete",(req, res)=>{
     }
 })
 
-router.get("/admin/categories",(req, res)=>{
+router.get("/admin/categories",admninAuth,(req, res)=>{
     Category.findAll().then(categories =>{
         res.render("admin/categories/index",{categories: categories});
     });
@@ -52,7 +53,7 @@ router.get("/admin/categories",(req, res)=>{
 });
 
 // Abrindo a tela de editar categorias
-router.get("/admin/categories/edit/:id",(req, res) =>{
+router.get("/admin/categories/edit/:id",admninAuth,(req, res) =>{
     var id = req.params.id;
     if(isNaN(id)){
         res.redirect("/admin/categories");
@@ -69,7 +70,7 @@ Category.findByPk(id).then(category =>{
 })
 
 // editando categoria e eviando para o banco
-router.post("/categories/update",(req,res)=>{
+router.post("/categories/update",admninAuth,(req,res)=>{
     var id =req.body.id;
     var title = req.body.title;
 

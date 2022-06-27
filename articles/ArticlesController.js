@@ -3,10 +3,11 @@ const router = express.Router();
 const Category = require("../categories/category");
 const Article = require("./Article");
 const slugify = require("slugify");
+const admninAuth = require("../middlewares/adminAuth");
 
 
 //LISTANDO TODOS OS ARTIGOS
-router.get("/admin/articles",(req,res)=>{
+router.get("/admin/articles",admninAuth, (req,res )=>{
     Article.findAll({
         include: [{model: Category}]
     }).then(articles =>{
@@ -37,7 +38,7 @@ router.post("/articles/delete",(req, res)=>{
 })
 
 //NOVO ARTIGOS
-router.get("/admin/articles/new", (req,res)=>{
+router.get("/admin/articles/new",admninAuth, (req,res)=>{
     Category.findAll().then(categories =>{
         res.render("admin/articles/new",{categories: categories});
     })
@@ -61,7 +62,7 @@ router.get("/admin/articles/new", (req,res)=>{
  })
 
 // Editando artigos
-router.get("/admin/articles/edit/:id",(req,res) =>{
+router.get("/admin/articles/edit/:id",admninAuth,(req,res) =>{
     var id= req.params.id;
     Article.findByPk(id).then(article =>{
         if(article != undefined){
@@ -98,7 +99,7 @@ router.post("/articles/update",(req, res) =>{
     });
 })
 
-router.get ("/articles/page/:num",(req, res)=>{
+router.get ("/articles/page/:num",admninAuth,(req, res)=>{
     var page = req.params.num;
     var offset = 0;
 
