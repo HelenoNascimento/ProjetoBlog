@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Nunito:wght@200;300;400;600;700&family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --red: #ff3838;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+}
+header{
+    background: #fff;
+    
+}
+.header-top{
+    background: rgb(24, 23, 23);
+    color: #fff;
+    text-decoration: none;
+    font-style: none;
+    display: flex;
+    justify-content: space-between;
+  
+    
+}
+header .navbar a{
+
+    color: #fff;
+}
+header a:hover{
+    color: aqua;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo h1{
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+
+.navbar-menu{
+    border-bottom: .1rem solid rgba(0 ,0 ,0 ,.1);
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.navbar-menu a{
+   
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: black;
+}
+.navbar-menu a:hover{
+
+    color: rgb(231, 14, 14);
+}
+
+.main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.container-title span{
+    display: block;
+    margin-top: 2rem;
+    font-size: 2rem;
+    
+}
+
+
+
+
+.container-items{
+    margin-top: 3rem;
+    width: 100vw;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 3rem;
+}
+.box-notice{
+    width:25%;
+    height: 50vh;
+    
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0 ,0 ,0 ,.1);
+    border: .2rem solid rgba(0 ,0 ,0 ,.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.box-notice .title{
+    margin-top: 2rem;
+}
+.box-notice .descricao{
+    margin-left: 1rem;
+}
+.box-notice button{
+    margin: 2rem;
+    padding: 1.3rem;
+    border-radius: 5px;
+    border: none;
+
+
+    display: inline-block;
+    padding: .6rem 2rem;
+    border: .2rem solid #000;
+    color: #000;
+    cursor: pointer;
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+}
+
+.box-notice button::before{
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 0%;
+    height: 100%;
+    background: #000;
+    transition: .3s linear;
+    z-index: -1;
+}
+
+.box-notice button:hover::before{
+    width: 100%;
+    top: 0; 
+    color: #fff;
+}
+button:hover{
+    color:#fff;
+}

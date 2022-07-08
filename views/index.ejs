@@ -1,36 +1,35 @@
-<%- include ('partials/header.ejs') %>
-<%- include ('partials/homenavbar.ejs') %>
+<%- include ('partials/Newheader.ejs') %>
+<%- include ('partials/Newnavbar.ejs') %>
+<section class="main">   
 
-<body>
-<div class="container">
-    <hr>
-    <div class="jumbotron">
-        <h1 class="display-4">Bem vindo</h1>
-        <p class="lead">Este é um simples blog</p>
-        <hr class="my-4">
-        <p>Ele usa classes utilitárias para tipografia e espaçamento de conteúdo, dentro do maior container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a>
-      </div>
-    <hr>
-    <% articles.forEach(article =>{ %>
-       <div class="card">
-            <div class="card-header">
-                <h2> <%= article.title %></h2>
+    <div class="container">
+        <div class="container-title">
+           <span> Blog</span>
+        </div>
+        <div class="container-items">
+            <% articles.forEach(article =>{ %>
+            <div class="box-notice"> 
+                <span class="title">
+                    <%= article.title %>
+                </span>
+                <p class="descricao"> <%= article.slug%></p>
+               <a href="/<%= article.slug %>" ><button >ler Mais</button> </a>
             </div>
-            <div class="card-body">
-               <a href="/<%= article.slug %>" class="btn btn-success">Ler Artigo</a>
-            </div>
-       </div>
-       <br>
-    <% }) %>
-       <div class="row">
-         <div class="col col-12">
-            <a style="float:right" href="/articles/page/2">Next >>></a>
-         </div>
-        
-        <hr>
-       </div>
-       <hr>
-</div>
+            <% }) %>
+            
+        </div>
+        <div class="row">
+           
+
+    </div>
+  
+        <a style="float:right" href="/articles/page/2">Next >>></a>
+     
+    
+    <hr>
+   </div>
+   <hr>
+
+</section>
 </body>
 <%- include ('partials/footer.ejs') %>
