@@ -99,7 +99,7 @@ router.post("/articles/update",(req, res) =>{
     });
 })
 
-router.get ("/articles/page/:num",admninAuth,(req, res)=>{
+router.get ("/articles/page/:num",(req, res)=>{
     var page = req.params.num;
     var offset = 0;
 
@@ -130,7 +130,7 @@ router.get ("/articles/page/:num",admninAuth,(req, res)=>{
         }
 
         Category.findAll().then(categories =>{
-            res.render("admin/articles/page",{result: result, categories: categories})
+            res.render("page",{result: result, categories: categories})
             //res.json(result);
         });
         

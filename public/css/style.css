@@ -71,11 +71,12 @@ header a:hover{
 .main{
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: auto;
 }
 .container{
     display: flex;
     width: 100vw;
+    height: auto;
     align-items: center;
     flex-direction: column;
     
@@ -118,6 +119,7 @@ header a:hover{
 
 .box-notice .title{
     margin-top: 2rem;
+    font-size: 1.5rem;
 }
 .box-notice .descricao{
     margin-left: 1rem;

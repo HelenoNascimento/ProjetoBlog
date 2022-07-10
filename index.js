@@ -19,6 +19,8 @@ app.set('view engine', 'ejs');
 
 //static/// carregando arquivos staticos
 app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
+
 //Body parser
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
