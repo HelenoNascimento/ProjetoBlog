@@ -163,3 +163,107 @@ header a:hover{
 button:hover{
     color:#fff;
 }
+
+/*** formulario login*/
+main{
+    width: 100vw;
+    height: auto;
+    display: flex;
+   
+}
+
+.form-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #e3e2e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form {
+    margin-top: -150px;
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 5px;
+    width: 420px;
+    height: 300px;
+  }
+  form .input-block {
+    margin-bottom: 20px;
+  }
+  form .input-block label {
+    font-size: 1.3rem;
+    color: darkslateblue;
+  }
+  form .input-block input {
+    width: 100%;
+    display: block;
+    margin-top: 8px;
+    padding: 10px;
+    font-size: 16px;
+    color: #7159c1;
+    border-radius: 2px;
+    border: 1px solid #ccddef;
+    outline-color: #7159c1;
+  }
+  form .btn-login {
+    display: block;
+    min-width: 120px;
+    border: none;
+    background-color: #002cf0;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+    padding: 7px;
+  }
+  /***************aparicao do form*******************/
+form{
+    animation-name: fade;
+    animation-duration: 500ms;
+  }
+  @keyframes fade{
+    from{
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  /***************movimentando os input*******************/
+  form{
+    overflow: hidden;
+  }
+  form .input-block:nth-child(1){
+    animation-name: move;
+    animation-duration: 500ms;
+  
+  }
+  form .input-block:nth-child(2){
+    animation-name: move;
+    animation-duration: 500ms;
+    animation-delay: 100ms;
+    animation-fill-mode: backwards;
+  }
+  form .btn-login {
+    animation-name: move;
+    animation-duration: 400ms;
+    animation-delay: 250ms;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes move{
+    from{
+      opacity: 0;
+      transform: translateX(-35%)
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0%)
+    }
+  }
+  
+ 

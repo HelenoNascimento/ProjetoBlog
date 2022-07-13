@@ -12,7 +12,7 @@ router.get("/admin/users",admninAuth,(req, res)=>{
   
 });
 
-router.get("/admin/user/create",(req, res) =>{
+router.get("/admin/user/create",admninAuth,(req, res) =>{
     res.render("admin/users/create");
 });
 
