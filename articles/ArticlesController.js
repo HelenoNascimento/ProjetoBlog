@@ -50,11 +50,12 @@ router.get("/admin/articles/new",admninAuth, (req,res)=>{
     var title = req.body.title;
     var body = req.body.body;
     var category = req.body.category;
-
+    var resumo = req.body.resumo;
     Article.create({
         title: title,
         slug: slugify(title),
         body: body,
+        resumo: resumo,
         categoryId: category
     }).then(()=>{
         res.redirect("/admin/articles");
@@ -86,9 +87,10 @@ router.post("/articles/update",(req, res) =>{
     var title = req.body.title;
     var body = req.body.body;
     var category = req.body.category;
+    var resumo = req.body.resumo;
     console.log("chegou aqui"+ id);
 
-    Article.update({title: title, body: body, categoryId: category, slug: slugify(title)},{
+    Article.update({title: title, body: body, resumo: resumo,categoryId: category, slug: slugify(title)},{
         where:{
             id: id
         }

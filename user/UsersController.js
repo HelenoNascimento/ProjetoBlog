@@ -11,7 +11,7 @@ router.get("/admin/users",admninAuth,(req, res)=>{
     })
   
 });
-
+//,admninAuth
 router.get("/admin/user/create",admninAuth,(req, res) =>{
     res.render("admin/users/create");
 });
@@ -22,16 +22,18 @@ router.get("/admin/user/create",admninAuth,(req, res) =>{
 router.post("/users/create",(req, res)=>{
     var email = req.body.email;
     var password = req.body.password;
-
+    var nome = req.body.nome;
       User.findOne({where: {
         email: email
       }}).then( user =>{
 
         if(user == undefined){
+            
             var salt = bcrypt.genSaltSync(10);
             var hash = bcrypt.hashSync(password,salt);
 
             User.create({
+                nome: nome,
                 email: email,
                 senha: hash
             }).then(() =>{

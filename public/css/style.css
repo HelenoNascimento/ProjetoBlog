@@ -120,9 +120,12 @@ header a:hover{
 .box-notice .title{
     margin-top: 2rem;
     font-size: 1.5rem;
+   
 }
 .box-notice .descricao{
     margin-left: 1rem;
+    overflow: hidden;
+    text-align: left;
 }
 .box-notice button{
     margin: 2rem;
@@ -188,7 +191,7 @@ form {
     padding: 30px 25px;
     border-radius: 5px;
     width: 420px;
-    height: 300px;
+    height: auto;
   }
   form .input-block {
     margin-bottom: 20px;

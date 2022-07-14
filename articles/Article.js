@@ -12,6 +12,9 @@ const Article = connection.define('articles',{
     },slug: {
         type: Sequelize.STRING,
         allowNull: false
+    },resumo:{
+        type: Sequelize.STRING,
+        allowNull: false
     },
     body:{
         type: Sequelize.TEXT,
@@ -24,5 +27,5 @@ const Article = connection.define('articles',{
 Category.hasMany(Article); // uma categoria tem muitos artigos
 Article.belongsTo(Category); // um artigo pertence a uma categoria
 
-
+//Article.sync({force: true}); recria a tabela no banco
 module.exports = Article;
