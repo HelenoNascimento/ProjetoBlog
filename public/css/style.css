@@ -268,5 +268,71 @@ form{
       transform: translateX(0%)
     }
   }
+  @media(max-width:1100px){
+    
+    .box-notice{
+      width:44%;
+      height: 50vh;
+      
+    }
+    .box-notice .title{
+      margin-top: 2rem;
+      font-size: 1.5rem;
+     
+  }
+  .box-notice .descricao{
+      margin-left: 2rem;
+      overflow: hidden;
+      text-align: left;
+  }
+  }
   
- 
+  @media(max-width:991px){
+    
+    .box-notice{
+      width:44%;
+      height: 50vh;
+      
+    }
+  }
+
+   
+  @media(max-width:750px){
+    
+    .box-notice{
+      width:70%;
+      height: 50vh;
+      
+    }
+    .box-notice .title{
+      margin-top: 1rem;
+      font-size: 1.7rem;
+     
+  }
+    .box-notice .descricao{
+      margin-left: 2rem;
+      font-size: 1.3rem;
+      overflow: hidden;
+      text-align: left;
+  }
+  }
+
+  @media(max-width:500px){
+    
+    .box-notice{
+      width:70%;
+      height: 50vh;
+      
+    }
+    .box-notice .title{
+      margin-top: 1rem;
+      font-size: 1.2rem;
+     
+  }
+  .box-notice .descricao{
+      margin-left: 2rem;
+      font-size: 1rem;
+      overflow: hidden;
+      text-align: left;
+  }
+  }
