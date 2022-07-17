@@ -15,4 +15,7 @@ Funcionalidade 3: Criação de usuario com privilegios de administrador<br>
 <h2>🔧 Tecnologias utilizadas</h2><br>
 Tecnologia: Node JS, Ejs, Javascript, Html/Css , Bootstrap
 
+
+[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/ZWxi7H6Kqk4)
+
 https://youtu.be/ZWxi7H6Kqk4
