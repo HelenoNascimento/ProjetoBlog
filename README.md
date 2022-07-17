@@ -26,12 +26,6 @@ Tela Artigo
   <br>
 ![image](https://user-images.githubusercontent.com/20055120/179402859-c074b64f-3cc1-4c67-b58e-290fe8a06f06.png)
 <br>
-Listando os Artigos
-  <br>
-![image](https://user-images.githubusercontent.com/20055120/179402884-385f1bee-b7be-49ae-88be-a91322ca0538.png)
-  <br>
-Tela Admin para gerenciar os artigos e categorias
-  <br>
-![image](https://user-images.githubusercontent.com/20055120/179402958-cbcdf02c-b7b2-4169-b604-6e7bca58493e.png)
+
 
 
