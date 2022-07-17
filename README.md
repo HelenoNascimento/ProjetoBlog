@@ -23,15 +23,15 @@ Tela Inicial
 ![image](https://user-images.githubusercontent.com/20055120/179402837-0a946bfc-b218-4919-a894-38302cfe02b9.png)
 <br><br>
 Tela Artigo
-  <br>
+  <br> <br>
 ![image](https://user-images.githubusercontent.com/20055120/179402859-c074b64f-3cc1-4c67-b58e-290fe8a06f06.png)
-<br>
+<br> <br>
 Listando os Artigos
-  <br>
+  <br> <br>
 ![image](https://user-images.githubusercontent.com/20055120/179402884-385f1bee-b7be-49ae-88be-a91322ca0538.png)
-  <br>
+  <br> <br>
 Tela Admin para gerenciar os artigos e categorias
-  <br>
+  <br> <br>
 ![image](https://user-images.githubusercontent.com/20055120/179403053-e0170633-8f69-4ce6-8bb9-190e8b75b74d.png)
 
 
