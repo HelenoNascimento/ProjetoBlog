@@ -20,18 +20,22 @@ Tecnologia: Node JS, Ejs, Javascript, Html/Css , Bootstrap
 <br>
 Tela Inicial
   <br>
+![image](https://user-images.githubusercontent.com/20055120/179521048-7383b10c-37eb-4788-9ac4-52adc6abfa96.png)
 
 <br><br>
 Tela Artigo
   <br> <br>
+![image](https://user-images.githubusercontent.com/20055120/179521128-2fe9e332-80eb-4fb6-a4a6-6434e35de1f3.png)
 
 <br> <br>
 Listando os Artigos
   <br> <br>
+![image](https://user-images.githubusercontent.com/20055120/179521203-9d74e13d-fe44-4090-a2ec-cddf49273f9f.png)
 
   <br> <br>
 Tela Admin para gerenciar os artigos e categorias
   <br> <br>
+![image](https://user-images.githubusercontent.com/20055120/179521270-3dde8587-8078-45b3-8402-ea49791e4dc4.png)
 
 
 
