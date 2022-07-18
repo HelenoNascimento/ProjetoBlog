@@ -2,7 +2,7 @@
 
 *Projeto devenvolvido em um curso de Node<br>
 <br>
-um blog para criação de artigos separados com suas respectivas categorias 
+um blog para criação de artigos separados com suas respectivas categorias <br>
 Com algumas alterações de minha autoria<br><br>
 
 
