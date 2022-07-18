@@ -20,7 +20,7 @@ Tecnologia: Node JS, Ejs, Javascript, Html/Css , Bootstrap
 <br>
 Tela Inicial
   <br>
-![image](https://user-images.githubusercontent.com/20055120/179521622-b63556a1-32ea-46ce-b7ae-354a07c06f19.png)
+![image](https://user-images.githubusercontent.com/20055120/179521760-255527df-3556-4f7f-a063-1532c8fc320a.png)
 
 <br><br>
 Tela Artigo
